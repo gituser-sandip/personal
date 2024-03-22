@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <title>Sandip Meche</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
+  <meta name="description" content=" Sandip Meche" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -22,93 +24,15 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-  <div id="fadein"></div>
-  <style>
-    /* For best practice, move CSS below to an external CSS file. */
-    @keyframes fadeinall {
-    0% {
-      opacity: 1; }
-    97% {
-      opacity: 0; }
-    98% {
-      opacity: 0;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      z-index: -1; } }
-    #fadein {
-      opacity: 1;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      background-color: #FFFFFF;
-      z-index: 999;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation: fadeinall 1s normal both;
-      animation: fadeinall 1s normal both;
-      -webkit-animation-delay: 0.3s;
-      animation-delay: 0.3s; }
-  </style>
-  <div id="loader-wrapper">
-    <div class="loader"></div>
-  </div>
-  <style>
-    /* For best practice, move CSS below to an external CSS file. */
-    @keyframes rotation {
-      0% {
-        transform: rotate(0deg); }
-      100% {
-        transform: rotate(360deg); } }
-    #loader-wrapper {
-      background-color: #FFFFFF;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-    .loader {
-      width: 40px;
-      height: 40px;
-      border: 5px solid #000000;
-      border-bottom-color: transparent;
-      border-radius: 50%;
-      margin-top:calc(50vh - 20px);
-      display: inline-block;
-      box-sizing: border-box;
-      -webkit-animation: rotation 1s linear infinite;
-      animation: rotation 1s linear infinite; }
-  </style>
-  <h1>Hello, world!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. </p>
-  <img src="https://via.placeholder.com/800x600/" alt="">
-  <div style="width: 100%; position: fixed; z-index: 1000; top: 0; left: 0; background: lightgray;"><p>This is an announcemet.</p><div onClick="parentNode.remove()">Close [X]</div></div>
-  <footer>
-    <small>© <script>document.write(new Date().getFullYear())</script> Sandip Meche. All Rights Reserved.</small>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-  window.onload = function(){
-    setTimeout(function(){
-      document.getElementById("fadein").remove();
-    },1000);
-  };
-  </script>
-  <script type="text/javascript">
-    $(window).on('load', function() {
-      $("#loader-wrapper").fadeOut(700);
-    });
-  </script>
-  <script src="app.js"></script>
+<!-- component -->
+<div class="flex items-center justify-center h-screen bg-gradient-to-br from-indigo-500 to-indigo-800">
+   <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+     <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://instagram.fbir7-1.fna.fbcdn.net/v/t51.2885-19/434129491_952606073096707_6323829995641793211_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fbir7-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=Pn80JFfPyWUAX9PAfj2&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfANsspbwqLxf-ENdqvNIdHvJKeygg6gK-x7RVpOvk2w-A&oe=6602CCAF&_nc_sid=8b3546" alt="product designer">
+     <h1 class="text-lg text-gray-700"> Sandip Meche </h1>
+     <h3 class="text-sm text-gray-400 "> Creative Director </h3>
+     <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+   </div>
+ </div>
 </body>
 </html>
